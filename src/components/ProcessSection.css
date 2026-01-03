@@ -1,0 +1,148 @@
+.process-section {
+    background-color: #ffffff;
+    padding: 3rem 0;
+}
+
+.process-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #111;
+}
+
+.process-container {
+    display: flex;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+/* Tabs Sidebar */
+.process-tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #F9FAFB;
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 250px;
+}
+
+.tab-btn {
+    padding: 1.5rem 2rem;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-left: 4px solid transparent;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4B5563;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #F3F4F6;
+    color: #111;
+}
+
+.tab-btn.active {
+    background-color: #F3F4F6;
+    border-left-color: #DC2626;
+    /* Red color */
+    color: #111;
+    font-weight: 600;
+}
+
+/* Content Area */
+.process-content {
+    flex: 3;
+}
+
+.content-image {
+    width: 100%;
+    max-width: 700px;
+    /* Reduced max-width */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .content-image {
+        max-width: 100%;
+    }
+}
+
+.text-content {
+    color: #374151;
+}
+
+.content-block {
+    margin-bottom: 2rem;
+}
+
+.block-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #111;
+}
+
+.block-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.tech-list-title,
+.frameworks-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #1F2937;
+}
+
+.tech-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tech-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 960px) {
+    .process-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .process-tabs {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        border-bottom: 1px solid #E5E7EB;
+    }
+
+    .tab-btn {
+        padding: 1rem;
+        border-left: none;
+        border-bottom: 4px solid transparent;
+        white-space: nowrap;
+    }
+
+    .tab-btn.active {
+        border-left: none;
+        border-bottom-color: #DC2626;
+        /* Red color */
+    }
+}

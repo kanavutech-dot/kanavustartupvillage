@@ -1,0 +1,68 @@
+.hosting-section {
+    padding: 3rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.hosting-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hosting-text {
+    font-size: 1.5rem;
+    /* Large readable text */
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+}
+
+.hosting-cta {
+    color: #D92323;
+    /* Primary Red */
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hosting-cta:hover {
+    color: #b91c1c;
+    text-decoration: underline;
+}
+
+.hosting-image-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.hosting-image {
+    width: 100%;
+    height: 400px;
+    /* Reduced height */
+    object-fit: cover;
+    /* Maintain aspect ratio while cropping */
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hosting-section {
+        padding: 2rem 0;
+    }
+
+    .hosting-text {
+        font-size: 1.25rem;
+    }
+
+    .hosting-image {
+        height: 250px;
+        /* Further reduce height on mobile */
+    }
+}

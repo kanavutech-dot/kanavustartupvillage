@@ -1,0 +1,94 @@
+.execution-section {
+    padding: 3rem 0;
+    background-color: #f9fafb;
+    /* Light background */
+}
+
+.execution-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.execution-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4rem;
+    text-align: left;
+    /* According to screenshot */
+}
+
+.execution-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Force 2 columns */
+    gap: 2rem;
+}
+
+.execution-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.execution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.execution-icon-wrapper {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.execution-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.execution-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.execution-content p {
+    font-size: 1rem;
+    color: #4B5563;
+    /* Gray-600 */
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .execution-grid {
+        grid-template-columns: 1fr;
+        /* Switch to 1 column on tablets/mobile */
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .execution-section {
+        padding: 2rem 0;
+    }
+
+    .execution-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .execution-title {
+        text-align: center;
+    }
+}

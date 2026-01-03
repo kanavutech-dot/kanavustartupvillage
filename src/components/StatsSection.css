@@ -1,0 +1,127 @@
+.stats-section {
+    position: relative;
+    padding: 3rem 0;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.stats-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.stats-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    /* Darken the image */
+}
+
+/* Gradient overlay to make text readable - Reduced opacity */
+.stats-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Much lighter gradient */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+    z-index: 1;
+}
+
+.stats-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.stats-content-wrapper {
+    max-width: 600px;
+    margin-left: auto;
+    /* Push to right side */
+}
+
+.stats-small-title {
+    font-size: 1rem;
+    color: #E5E7EB;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.stats-main-title {
+    font-size: 2.5rem;
+    /* Reduced from 3.5rem */
+    font-weight: 600;
+    /* Reduced from 700 */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.stats-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #D1D5DB;
+    margin-bottom: 3rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    /* Reduced from 3rem */
+    font-weight: 600;
+    /* Reduced from 700 */
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #E5E7EB;
+}
+
+@media (max-width: 768px) {
+    .stats-main-title {
+        font-size: 2.5rem;
+    }
+
+    .stats-container {
+        justify-content: flex-start;
+    }
+
+    .stats-content-wrapper {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .stats-grid {
+        gap: 2rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}

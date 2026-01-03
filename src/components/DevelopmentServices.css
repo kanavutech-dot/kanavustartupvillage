@@ -1,0 +1,90 @@
+.dev-services-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.dev-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.dev-services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4rem;
+    text-transform: lowercase;
+    /* Matches "our services" in screenshot */
+}
+
+.dev-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    justify-content: center;
+}
+
+.dev-service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.dev-service-card:hover {
+    transform: translateY(-5px);
+}
+
+.dev-service-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.dev-service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.dev-service-card p {
+    font-size: 1rem;
+    color: #4B5563;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 350px;
+    /* Limit width for better readability */
+}
+
+.dev-service-link {
+    font-size: 1rem;
+    color: #111;
+    /* Dark color */
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.dev-service-link:hover {
+    color: #D92323;
+    /* Primary Red */
+}
+
+@media (max-width: 768px) {
+    .dev-services-section {
+        padding: 2rem 0;
+    }
+
+    .dev-services-title {
+        font-size: 2rem;
+    }
+}

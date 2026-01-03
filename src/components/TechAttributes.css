@@ -1,0 +1,101 @@
+.tech-attributes-section {
+    padding: 3rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tech-attributes-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.tech-header {
+    margin-bottom: 4rem;
+}
+
+.tech-subtitle {
+    font-size: 1rem;
+    color: #D92323;
+    /* Primary Red */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.tech-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.tech-description {
+    font-size: 1.1rem;
+    color: #4B5563;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-icon-wrapper {
+    font-size: 3rem;
+    color: #D92323;
+    margin-bottom: 1.5rem;
+}
+
+.tech-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.tech-card p {
+    font-size: 0.95rem;
+    color: #4B5563;
+    line-height: 1.8;
+    text-align: justify;
+    /* User requested justify */
+    hyphens: auto;
+    /* Reduces large gaps by breaking words */
+    -webkit-hyphens: auto;
+    word-break: break-word;
+    /* Ensure words break if too long */
+}
+
+@media (max-width: 1024px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-attributes-section {
+        padding: 2rem 0;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-title {
+        font-size: 2rem;
+    }
+}

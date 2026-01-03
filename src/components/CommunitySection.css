@@ -1,0 +1,94 @@
+.community-section {
+    padding: 3rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.community-header {
+    margin-bottom: 4rem;
+}
+
+.community-subtitle {
+    font-size: 1rem;
+    color: #EF4444;
+    /* Red color */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.community-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.community-card {
+    background-color: #FFF1F2;
+    /* Very light pink/red */
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #EF4444;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    /* Good reading line-height */
+    color: #374151;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+@media (max-width: 1024px) {
+    .community-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .community-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .community-title {
+        font-size: 2.5rem;
+    }
+}

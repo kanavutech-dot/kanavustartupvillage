@@ -1,0 +1,76 @@
+.services-section {
+    background-color: #F9FAFB;
+    padding: 3rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border-color: rgba(217, 35, 35, 0.1);
+}
+
+/* Specific border for the "Development" card if we want to match the red outline accurately always, 
+   but usually hover effects are better. The design shows one red box. 
+   I'll add a specific class for active/highlighted if needed, or just hover. 
+   The image shows Development has a red border. I'll make it default styling or just hover.
+   For now, I'll make the border appear on hover, or add a 'highlighted' prop.
+*/
+
+.service-icon-wrapper {
+    flex-shrink: 0;
+    width: 100px;
+    /* Adjust based on image size */
+}
+
+.service-icon {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.service-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #4B5563;
+    /* Gray-600 */
+    text-align: justify;
+}
+
+@media (max-width: 960px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

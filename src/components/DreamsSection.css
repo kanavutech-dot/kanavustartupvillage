@@ -1,0 +1,50 @@
+.dreams-section {
+    padding: 3rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.dreams-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.dreams-title {
+    font-size: 3rem;
+    /* Matched to other section titles */
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4rem;
+    line-height: 1.2;
+}
+
+.dreams-image-wrapper {
+    width: 100%;
+    max-width: 800px;
+    /* Reduced width further */
+    margin: 0 auto;
+    /* Center align */
+    border-radius: 8px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    perspective: 1000px;
+    /* Essential for 3D tilt effect */
+    cursor: pointer;
+}
+
+.dreams-image {
+    width: 100%;
+    height: auto;
+    /* Auto height to prevent cropping */
+    display: block;
+    object-fit: contain;
+    /* Ensure full image is visible */
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .dreams-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}

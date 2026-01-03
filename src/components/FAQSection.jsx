@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FaqSection.css';
+import './FAQSection.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 

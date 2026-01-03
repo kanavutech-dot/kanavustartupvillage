@@ -53,6 +53,10 @@
 }
 
 @media (max-width: 768px) {
+    .tech-stack-container {
+        padding: 0 1rem;
+    }
+
     .tech-logos-grid {
         gap: 2rem;
     }

@@ -57,6 +57,10 @@
         padding: 2rem 0;
     }
 
+    .hosting-container {
+        padding: 0 1rem;
+    }
+
     .hosting-text {
         font-size: 1.25rem;
     }

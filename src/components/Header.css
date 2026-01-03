@@ -135,4 +135,8 @@
     .mobile-menu-btn {
         display: flex;
     }
+
+    .container {
+        padding: 0 1rem;
+    }
 }

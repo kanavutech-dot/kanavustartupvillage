@@ -91,6 +91,10 @@
         padding: 2rem 0;
     }
 
+    .tech-attributes-container {
+        padding: 0 1rem;
+    }
+
     .tech-grid {
         grid-template-columns: 1fr;
     }

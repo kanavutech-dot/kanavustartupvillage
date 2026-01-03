@@ -96,6 +96,10 @@
         padding: 2rem 0;
     }
 
+    .faq-container {
+        padding: 0 1rem;
+    }
+
     .faq-title {
         font-size: 2rem;
         /* Standardized mobile size */

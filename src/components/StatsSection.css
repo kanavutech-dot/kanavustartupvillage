@@ -110,6 +110,7 @@
 
     .stats-container {
         justify-content: flex-start;
+        padding: 0 1rem;
     }
 
     .stats-content-wrapper {

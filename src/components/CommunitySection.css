@@ -86,9 +86,15 @@
 @media (max-width: 768px) {
     .community-grid {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 1.5rem;
     }
 
     .community-title {
         font-size: 2.5rem;
+    }
+
+    .community-card {
+        padding: 2rem 1.5rem;
     }
 }

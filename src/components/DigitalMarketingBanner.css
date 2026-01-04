@@ -1,0 +1,51 @@
+.digital-marketing-banner-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.digital-marketing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.digital-marketing-text {
+    font-size: 1.5rem;
+    /* Match Development Page */
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+}
+
+.highlight-red {
+    color: #D92323;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.highlight-red:hover {
+    color: #b91c1c;
+    text-decoration: underline;
+}
+
+.digital-marketing-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.digital-marketing-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}

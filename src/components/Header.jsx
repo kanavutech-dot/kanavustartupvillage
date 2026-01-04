@@ -35,7 +35,7 @@ const Header = () => {
                     <ul>
                         <li><a href="/#about">About</a></li>
                         <li><Link to="/development">Development</Link></li>
-                        <li><a href="/#digital">Digital</a></li>
+                        <li><Link to="/digital">Digital</Link></li>
                         <li><a href="/#hub">Hub</a></li>
                         <li><a href="/#academy">Academy</a></li>
                         <li><a href="/#contact" className="contact-link">» Contact</a></li>
@@ -45,7 +45,7 @@ const Header = () => {
 
                 <div className="header-actions">
                     <button className="search-btn"><IoSearch /></button>
-                    <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
+                    <button className={`mobile-menu-btn ${isMenuOpen ? 'menu-open' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
                         {isMenuOpen ? <IoClose /> : <IoMenu />}
                     </button>
                 </div>
@@ -55,7 +55,7 @@ const Header = () => {
                     <ul>
                         <li><a href="/#about" onClick={toggleMenu}>About</a></li>
                         <li><Link to="/development" onClick={toggleMenu}>Development</Link></li>
-                        <li><a href="/#digital" onClick={toggleMenu}>Digital</a></li>
+                        <li><Link to="/digital" onClick={toggleMenu}>Digital</Link></li>
                         <li><a href="/#hub" onClick={toggleMenu}>Hub</a></li>
                         <li><a href="/#academy" onClick={toggleMenu}>Academy</a></li>
                         <li><a href="/#contact" onClick={toggleMenu}>Contact</a></li>

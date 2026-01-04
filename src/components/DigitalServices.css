@@ -1,0 +1,102 @@
+.digital-services-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.digital-services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 4rem;
+    text-transform: lowercase;
+    /* Matches the "our services" style in screenshot */
+}
+
+.digital-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    transition: none !important;
+    /* Ensure no transition artifacts */
+}
+
+.service-card:hover {
+    transform: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.service-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.service-icon {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0;
+    text-align: center;
+}
+
+.service-link {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .digital-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .digital-services-grid {
+        grid-template-columns: 1fr;
+    }
+}

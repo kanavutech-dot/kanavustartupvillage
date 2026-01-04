@@ -154,15 +154,7 @@ const ProcessSection = () => {
 
     return (
         <section className="process-section">
-            <motion.h2
-                className="process-title"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-            >
-                Process of workflow
-            </motion.h2>
+
             <motion.div
                 className="process-container"
                 initial={{ opacity: 0, y: 40 }}

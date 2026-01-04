@@ -65,7 +65,7 @@ const FaqSection = () => {
                                 onClick={() => toggleFaq(index)}
                                 aria-expanded={activeIndex === index}
                             >
-                                {faq.question}
+                                <span>{faq.question}</span>
                                 <span className="faq-toggle-icon">
                                     {activeIndex === index ? <FaMinus size={12} /> : <FaPlus size={12} />}
                                 </span>

@@ -42,10 +42,11 @@
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 3rem;
-    align-items: flex-start;
+    align-items: stretch;
+    /* Cards stretch to same height */
 }
 
 .tech-card {
@@ -53,6 +54,18 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    /* Ensure full height */
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .tech-icon-wrapper {
@@ -73,15 +86,12 @@
     color: #4B5563;
     line-height: 1.8;
     text-align: justify;
-    /* User requested justify */
     hyphens: auto;
-    /* Reduces large gaps by breaking words */
     -webkit-hyphens: auto;
     word-break: break-word;
-    /* Ensure words break if too long */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .tech-grid {
         grid-template-columns: repeat(2, 1fr);
     }

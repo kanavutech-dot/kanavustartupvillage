@@ -1,0 +1,116 @@
+.digital-attributes-section {
+    padding: 3rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.digital-attributes-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.digital-attr-header {
+    margin-bottom: 4rem;
+}
+
+.digital-attr-subtitle {
+    font-size: 1rem;
+    color: #D92323;
+    /* Primary Red */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.digital-attr-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.digital-attr-description {
+    font-size: 1.1rem;
+    color: #4B5563;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.digital-attr-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 3rem;
+    align-items: stretch;
+    /* Cards stretch to same height */
+}
+
+.digital-attr-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    /* Ensure full height */
+}
+
+.digital-attr-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.digital-attr-icon-wrapper {
+    font-size: 3rem;
+    color: #D92323;
+    margin-bottom: 1.5rem;
+}
+
+.digital-attr-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.digital-attr-card p {
+    font-size: 0.95rem;
+    color: #4B5563;
+    line-height: 1.8;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-break: break-word;
+}
+
+@media (max-width: 1200px) {
+    .digital-attr-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .digital-attributes-section {
+        padding: 3rem 0;
+    }
+
+    .digital-attributes-container {
+        padding: 0 1rem;
+    }
+
+    .digital-attr-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .digital-attr-title {
+        font-size: 2rem;
+    }
+}

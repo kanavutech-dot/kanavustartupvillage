@@ -84,6 +84,12 @@
     z-index: 1001;
 }
 
+.mobile-menu-btn.menu-open {
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+}
+
 /* Mobile Styles */
 .mobile-nav {
     position: fixed;

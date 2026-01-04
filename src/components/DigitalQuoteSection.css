@@ -1,0 +1,53 @@
+.digital-quote-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Parallax effect */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.digital-quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay for text readability */
+}
+
+.digital-quote-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.digital-quote-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    max-width: 700px;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .digital-quote-section {
+        height: 300px;
+        background-attachment: scroll;
+        /* Mobile support often disables fixed bg */
+    }
+
+    .digital-quote-text {
+        font-size: 1.8rem;
+    }
+}

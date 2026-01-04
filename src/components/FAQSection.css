@@ -12,12 +12,11 @@
 }
 
 .faq-header {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .faq-title {
     font-size: 2.5rem;
-    /* Standardized size */
     font-weight: 700;
     color: #111;
     margin-bottom: 1rem;
@@ -29,35 +28,39 @@
 }
 
 .faq-content-wrapper {
-    background-color: #FFF0F0;
-    /* Light pink/red background */
+    background-color: #FFF5F5;
+    /* Match Digital */
     padding: 3rem;
-    border-radius: 4px;
+    border-radius: 8px;
+    /* Match Digital */
 }
 
 .faq-item {
     background-color: #fff;
     margin-bottom: 1rem;
-    border-radius: 2px;
+    border-radius: 4px;
+    /* Match Digital */
     overflow: hidden;
     text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .faq-question-btn {
     width: 100%;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem;
+    /* Match Digital */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: none;
+    background: #fff;
     border: none;
     cursor: pointer;
     font-family: inherit;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
+    /* Match Digital */
     color: #111;
-    transition: background-color 0.2s;
+    text-align: left;
+    transition: background-color 0.3s ease;
 }
 
 .faq-question-btn:hover {
@@ -68,15 +71,19 @@
     width: 30px;
     height: 30px;
     background-color: #D92323;
-    /* Primary Red */
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 2px;
+    border-radius: 4px;
+    /* Match Digital */
     font-size: 1.2rem;
     flex-shrink: 0;
-    margin-left: 1rem;
+    /* margin-left removed effectively by using justify-between */
+    /* Digital uses justify-between, icon is at end */
+    /* Digital css has .digital-faq-icon but it doesn't explicitly margin-left. 
+       .digital-faq-question has justify-content: space-between.
+    */
 }
 
 .faq-answer {
@@ -92,25 +99,19 @@
 }
 
 @media (max-width: 768px) {
-    .faq-section {
-        padding: 2rem 0;
-    }
-
-    .faq-container {
-        padding: 0 1rem;
-    }
-
-    .faq-title {
-        font-size: 2rem;
-        /* Standardized mobile size */
-    }
-
     .faq-content-wrapper {
         padding: 1.5rem;
     }
 
+    .faq-title {
+        font-size: 2rem;
+    }
+
     .faq-question-btn {
         padding: 1rem;
+    }
+
+    .faq-question-btn span {
         font-size: 1rem;
     }
 }

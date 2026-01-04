@@ -1,0 +1,33 @@
+.digital-brain-section {
+    width: 100%;
+    margin-top: 0;
+    padding: 3rem 0;
+    /* Adjusted padding */
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    /* Essential for 3D tilt */
+    background-color: #ffffff;
+}
+
+.digital-brain-wrapper {
+    width: 100%;
+    max-width: 800px;
+    /* Reduced width */
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.digital-brain-img {
+    width: 100%;
+    height: 350px;
+    /* Fixed height to crop */
+    display: block;
+    object-fit: cover;
+    /* Allow cropping */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    filter: brightness(0.9);
+}

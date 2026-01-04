@@ -1,19 +1,17 @@
 import React from 'react';
 import './ServicesSection.css';
 import { motion } from 'framer-motion';
-
-import iconDev from '../assets/icon-development.png';
+import iconDevelopment from '../assets/icon-development.png';
 import iconDigital from '../assets/icon-digital.png';
 import iconHub from '../assets/icon-hub.png';
 import iconAcademy from '../assets/icon-academy.png';
 
 const ServicesSection = () => {
-    const services = [
+    const steps = [
         {
             title: "Development",
             description: "Expert software development services that transform ideas into reliable, future-ready applications.",
-            icon: iconDev,
-            highlight: true // The design shows development with a red border
+            icon: iconDevelopment
         },
         {
             title: "Digital",
@@ -34,25 +32,27 @@ const ServicesSection = () => {
 
     return (
         <section className="services-section">
-            <div className="services-grid">
-                {services.map((service, index) => (
-                    <motion.div
-                        key={index}
-                        className="service-card"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                        viewport={{ once: true }}
-                    >
-                        <div className="service-icon-wrapper">
-                            <img src={service.icon} alt={service.title} className="service-icon" />
-                        </div>
-                        <div className="service-content">
-                            <h3 className="service-title">{service.title}</h3>
-                            <p className="service-description">{service.description}</p>
-                        </div>
-                    </motion.div>
-                ))}
+            <div className="services-container">
+                <div className="services-grid">
+                    {steps.map((step, index) => (
+                        <motion.div
+                            key={index}
+                            className="service-card-new"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.2 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="service-icon-wrapper-new">
+                                <img src={step.icon} alt={`${step.title} Icon`} className="service-icon-new" />
+                            </div>
+                            <div className="service-content-new">
+                                <h3>{step.title}</h3>
+                                <p>{step.description}</p>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </section>
     );

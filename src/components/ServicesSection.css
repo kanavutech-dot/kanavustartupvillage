@@ -1,90 +1,79 @@
 .services-section {
-    background-color: #F9FAFB;
     padding: 3rem 0;
+    background-color: #fff;
+    /* Match ExecutionProcess bg */
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
     gap: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
 }
 
-.service-card {
-    background: white;
+.service-card-new {
+    background: #fff;
     padding: 2.5rem;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     display: flex;
-    flex-direction: row;
     gap: 2rem;
     align-items: flex-start;
-    text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid transparent;
+    height: 100%;
 }
 
-.service-card:hover {
+.service-card-new:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-    border-color: rgba(217, 35, 35, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific border for the "Development" card if we want to match the red outline accurately always, 
-   but usually hover effects are better. The design shows one red box. 
-   I'll add a specific class for active/highlighted if needed, or just hover. 
-   The image shows Development has a red border. I'll make it default styling or just hover.
-   For now, I'll make the border appear on hover, or add a 'highlighted' prop.
-*/
-
-.service-icon-wrapper {
+.service-icon-wrapper-new {
     flex-shrink: 0;
-    width: 60px;
-    /* Reduced from 100px to match row layout better */
-    height: auto;
-    display: block;
-    margin-bottom: 0;
+    width: 80px;
+    height: 80px;
 }
 
-.service-icon {
+.service-icon-new {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
-    display: block;
 }
 
-.service-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    align-items: flex-start;
-}
-
-.service-title {
+.service-content-new h3 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #111;
+    margin-bottom: 1rem;
 }
 
-.service-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
+.service-content-new p {
+    font-size: 1rem;
     color: #4B5563;
-    /* Gray-600 */
-    text-align: justify;
-    max-width: none;
+    line-height: 1.6;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
     .services-grid {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        padding: 2rem 0;
     }
 
-    .service-description {
-        text-align: left;
+    .service-card-new {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }

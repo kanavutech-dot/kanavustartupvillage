@@ -4,16 +4,21 @@ import logo from '../assets/logo.png';
 import { IoSearch, IoMenu, IoClose, IoChevronDown, IoChevronUp } from 'react-icons/io5';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import SearchOverlay from './SearchOverlay';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isAboutOpen, setIsAboutOpen] = useState(false);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const toggleAbout = () => setIsAboutOpen(!isAboutOpen);
+    const openSearch = () => setIsSearchOpen(true);
+    const closeSearch = () => setIsSearchOpen(false);
 
     return (
         <header className="header">
+            <SearchOverlay isOpen={isSearchOpen} onClose={closeSearch} />
             <div className="container header-container">
                 <motion.div
                     className="logo"
@@ -53,7 +58,7 @@ const Header = () => {
                 </motion.nav>
 
                 <div className="header-actions">
-                    <button className="search-btn"><IoSearch /></button>
+                    <button className="search-btn" onClick={openSearch}><IoSearch /></button>
                     <button className={`mobile-menu-btn ${isMenuOpen ? 'menu-open' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
                         {isMenuOpen ? <IoClose /> : <IoMenu />}
                     </button>

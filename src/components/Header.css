@@ -37,6 +37,15 @@
     display: flex;
     gap: 2.5rem;
     align-items: center;
+    list-style: none;
+    /* Ensure no bullets */
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav li {
+    position: relative;
+    /* Context for dropdown */
 }
 
 .desktop-nav a {
@@ -45,6 +54,7 @@
     color: var(--text-white);
     transition: color 0.3s;
     text-transform: capitalize;
+    text-decoration: none;
 }
 
 .contact-link {
@@ -55,6 +65,66 @@
 
 .desktop-nav a:hover {
     color: var(--primary-red);
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    padding: 0;
+    /* Remove padding to flush links */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    display: flex !important;
+    /* Override parent flex gap */
+    flex-direction: column !important;
+    gap: 0 !important;
+    border-radius: 4px;
+    z-index: 1001;
+    overflow: hidden;
+    /* For border radius */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.desktop-nav li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Explicitly style dropdown links */
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    color: #111 !important;
+    /* Force black text */
+    padding: 15px 25px;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+    white-space: nowrap;
+    border-bottom: 1px solid #f3f4f6;
+    text-align: left;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f9fafb;
+    color: #D92323 !important;
+    /* Red on hover */
 }
 
 .header-actions {
@@ -106,6 +176,8 @@
     flex-direction: column;
     align-items: center;
     z-index: 999;
+    overflow-y: auto;
+    /* Enable scrolling */
 }
 
 .mobile-nav.open {
@@ -117,12 +189,16 @@
     flex-direction: column;
     gap: 2.5rem;
     text-align: center;
+    list-style: none;
+    /* Ensure no bullets */
+    padding: 0;
 }
 
 .mobile-nav a {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-white);
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -145,4 +221,48 @@
     .container {
         padding: 0 1rem;
     }
+}
+
+/* Mobile Submenu Styles */
+.mobile-nav-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav-link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: var(--text-white);
+    /* Ensure variable is available or use #fff */
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.mobile-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem !important;
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    padding: 1rem 0 !important;
+    border-radius: 8px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.mobile-submenu li a {
+    font-size: 1rem !important;
+    color: #ccc !important;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.mobile-submenu li a:hover {
+    color: #D92323 !important;
+    /* using hex for red if variable not in scope here, though it likely is */
 }

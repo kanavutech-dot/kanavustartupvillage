@@ -1,0 +1,58 @@
+.hub-page {
+    background-color: #ffffff;
+    color: #111111;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.hub-hero {
+    color: #ffffff;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hub-hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: left;
+    padding: 0 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hub-hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.hub-hero-subtitle {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0;
+    line-height: 1.6;
+    color: #f3f4f6;
+}
+
+@media (max-width: 768px) {
+    .hub-hero-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hub-hero-subtitle {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+
+    .hub-hero-content {
+        text-align: center;
+    }
+}

@@ -1,0 +1,74 @@
+.hub-text-scroll-section {
+    padding: 3rem 0;
+    background-color: #020B14;
+    /* Dark background */
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hub-text-scroll-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    /* Fade edges */
+}
+
+.hub-text-scroll-wrapper {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 20s linear infinite;
+    /* Adjusted speed */
+}
+
+.hub-scroll-text {
+    font-size: 5rem;
+    /* Large text */
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    /* Outline style */
+    margin-right: 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* Make it continuous by duplicating content */
+.hub-text-scroll-wrapper {
+    display: flex;
+    padding-left: 0;
+    animation: scroll-left 30s linear infinite;
+    width: max-content;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Move half way assuming 2 sets of text */
+    }
+}
+
+@media (max-width: 768px) {
+    .hub-scroll-text {
+        font-size: 3rem;
+    }
+}

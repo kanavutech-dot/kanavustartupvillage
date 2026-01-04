@@ -26,8 +26,10 @@
 html,
 body {
   font-family: var(--font-main);
-  background-color: var(--dark-bg);
-  color: var(--text-white);
+  background-color: #ffffff;
+  /* Changed to white */
+  color: #111111;
+  /* Changed to dark text */
   line-height: 1.6;
   font-weight: var(--font-weight-normal);
   -webkit-font-smoothing: antialiased;
@@ -77,4 +79,19 @@ button {
   cursor: pointer;
   border: none;
   font-family: inherit;
+}
+
+/* Fix for sub-pixel lines between sections on 4k resolutions */
+@media (min-width: 2000px) {
+  main section {
+    margin-top: -1px;
+    /* Pull sections up to cover potential gaps */
+    border: none !important;
+    /* Ensure no borders are forcing lines */
+    outline: none !important;
+  }
+
+  main section:first-of-type {
+    margin-top: 0;
+  }
 }

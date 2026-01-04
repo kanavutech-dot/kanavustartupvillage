@@ -36,9 +36,9 @@ const Header = () => {
                         <li><a href="/#about">About</a></li>
                         <li><Link to="/development">Development</Link></li>
                         <li><Link to="/digital">Digital</Link></li>
-                        <li><a href="/#hub">Hub</a></li>
+                        <li><Link to="/hub">Hub</Link></li>
                         <li><a href="/#academy">Academy</a></li>
-                        <li><a href="/#contact" className="contact-link">» Contact</a></li>
+                        <li><Link to="/contact" className="contact-link">» Contact</Link></li>
                         <li><a href="/#blogs">Blogs</a></li>
                     </ul>
                 </motion.nav>
@@ -56,9 +56,9 @@ const Header = () => {
                         <li><a href="/#about" onClick={toggleMenu}>About</a></li>
                         <li><Link to="/development" onClick={toggleMenu}>Development</Link></li>
                         <li><Link to="/digital" onClick={toggleMenu}>Digital</Link></li>
-                        <li><a href="/#hub" onClick={toggleMenu}>Hub</a></li>
+                        <li><Link to="/hub" onClick={toggleMenu}>Hub</Link></li>
                         <li><a href="/#academy" onClick={toggleMenu}>Academy</a></li>
-                        <li><a href="/#contact" onClick={toggleMenu}>Contact</a></li>
+                        <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
                         <li><a href="/#blogs" onClick={toggleMenu}>Blogs</a></li>
                     </ul>
                 </div>

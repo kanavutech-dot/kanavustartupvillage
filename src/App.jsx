@@ -13,6 +13,9 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Web from './pages/Web';
 import AI from './pages/AI';
 import Flutter from './pages/Flutter';
+import Software from './pages/Software';
+import Cloud from './pages/Cloud';
+import UiUx from './pages/UiUx';
 
 import ScrollToTop from './components/ScrollToTop';
 
@@ -27,6 +30,9 @@ function App() {
           <Route path="/web" element={<Web />} />
           <Route path="/ai" element={<AI />} />
           <Route path="/flutter" element={<Flutter />} />
+          <Route path="/software" element={<Software />} />
+          <Route path="/cloud" element={<Cloud />} />
+          <Route path="/uiux" element={<UiUx />} />
           <Route path="/development" element={<Development />} />
           <Route path="/digital" element={<Digital />} />
           <Route path="/hub" element={<Hub />} />

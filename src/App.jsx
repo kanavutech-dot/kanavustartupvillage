@@ -6,6 +6,7 @@ import Development from './pages/Development';
 import Digital from './pages/Digital';
 import Hub from './pages/Hub';
 import Contact from './pages/Contact';
+import Academy from './pages/Academy';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/digital" element={<Digital />} />
           <Route path="/hub" element={<Hub />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/academy" element={<Academy />} />
         </Routes>
         <Footer />
         <FloatingWhatsApp />

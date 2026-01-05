@@ -1,0 +1,80 @@
+.academy-services-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.academy-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.academy-services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4rem;
+    text-transform: lowercase;
+}
+
+.academy-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Enforce 3 columns for this specific section */
+    gap: 3rem;
+    justify-content: center;
+}
+
+.academy-service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.academy-service-card:hover {
+    transform: translateY(-5px);
+}
+
+.academy-service-icon {
+    width: 60px;
+    /* Adjusted size based on visual proportion */
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.academy-service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.academy-service-card p {
+    font-size: 0.95rem;
+    color: #4B5563;
+    line-height: 1.6;
+    margin-bottom: 0;
+    max-width: 300px;
+    /* Slightly narrower text width */
+}
+
+@media (max-width: 900px) {
+    .academy-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .academy-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .academy-services-section {
+        padding: 2rem 0;
+    }
+}

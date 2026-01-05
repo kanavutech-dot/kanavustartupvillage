@@ -51,7 +51,7 @@ const Header = () => {
                         <li><Link to="/development">Development</Link></li>
                         <li><Link to="/digital">Digital</Link></li>
                         <li><Link to="/hub">Hub</Link></li>
-                        <li><a href="/#academy">Academy</a></li>
+                        <li><Link to="/academy">Academy</Link></li>
                         <li><Link to="/contact" className="contact-link">» Contact</Link></li>
                         <li><a href="/#blogs">Blogs</a></li>
                     </ul>
@@ -91,7 +91,7 @@ const Header = () => {
                         <li><Link to="/development" onClick={toggleMenu}>Development</Link></li>
                         <li><Link to="/digital" onClick={toggleMenu}>Digital</Link></li>
                         <li><Link to="/hub" onClick={toggleMenu}>Hub</Link></li>
-                        <li><a href="/#academy" onClick={toggleMenu}>Academy</a></li>
+                        <li><Link to="/academy" onClick={toggleMenu}>Academy</Link></li>
                         <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
                         <li><a href="/#blogs" onClick={toggleMenu}>Blogs</a></li>
                     </ul>

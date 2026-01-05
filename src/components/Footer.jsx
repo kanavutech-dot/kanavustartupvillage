@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaChevronDown, FaAngleUp, FaAngleDoubleRight } from 'react-icons/fa';
 
@@ -16,9 +16,9 @@ const Footer = () => {
                 {/* CTA Banner */}
                 <div className="footer-cta">
                     <h2 className="footer-cta-text">Technology is best when it brings people together</h2>
-                    <button className="footer-cta-btn">
+                    <Link to="/contact" className="footer-cta-btn">
                         get started <FaAngleDoubleRight size={14} />
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Footer Columns */}
@@ -38,9 +38,9 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li className="footer-link-item">
-                                <a href="#get-in-touch" className="footer-link">
+                                <Link to="/contact" className="footer-link">
                                     Get In Touch
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -49,6 +49,7 @@
     font-size: 1rem;
     cursor: pointer;
     text-transform: lowercase;
+    text-decoration: none;
     transition: background-color 0.3s;
     display: flex;
     align-items: center;

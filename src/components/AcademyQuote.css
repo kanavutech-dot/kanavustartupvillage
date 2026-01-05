@@ -1,0 +1,51 @@
+.academy-quote-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Fixed background for scroll effect */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.academy-quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay */
+}
+
+.academy-quote-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.academy-quote-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    max-width: 800px;
+    /* Slightly wider to fit the text comfortably */
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .academy-quote-section {
+        height: 300px;
+    }
+
+    .academy-quote-text {
+        font-size: 1.8rem;
+    }
+}

@@ -37,6 +37,13 @@
     align-items: flex-start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
+    border: 1px solid transparent;
+    /* Prepare for hover/highlight */
+}
+
+.execution-card.highlight {
+    border: 1px solid #ff4d4f;
+    /* Red highlight as per design */
 }
 
 .execution-card:hover {

@@ -16,7 +16,7 @@ const ContactFormSection = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://formsubmit.co/ajax/kvsnavee@gmail.com", {
+            const response = await fetch("https://formsubmit.co/ajax/kanavustartupvillage@gmail.com", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -47,9 +47,9 @@ const ContactFormSection = () => {
             <div className="contact-form-container">
                 <div className="contact-info">
                     <div className="info-block">
-                        <h3 className="info-title">Contact sales</h3>
+                        <h3 className="info-title">Contact</h3>
                         <p className="info-text">+91 8825889368</p>
-                        <a href="mailto:kvsnavee@gmail.com" className="info-text" style={{ textDecoration: 'none', color: '#333' }}>kvsnavee@gmail.com</a>
+                        <a href="mailto:kanavustartupvillage@gmail.com" className="info-text" style={{ textDecoration: 'none', color: '#333' }}>kanavustartupvillage@gmail.com</a>
                     </div>
 
                     <div className="info-block">

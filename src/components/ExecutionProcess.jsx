@@ -3,7 +3,6 @@ import './ExecutionProcess.css';
 import { motion } from 'framer-motion';
 import iconDefine from '../assets/icon-define.png';
 import iconDesign from '../assets/icon-design.png';
-
 import iconDevelop from '../assets/icon-develop.png';
 import iconDeploy from '../assets/icon-deploy.png';
 
@@ -48,7 +47,7 @@ const ExecutionProcess = () => {
                     {steps.map((step, index) => (
                         <motion.div
                             key={index}
-                            className="execution-card"
+                            className={`execution-card ${step.highlight ? 'highlight' : ''}`}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}

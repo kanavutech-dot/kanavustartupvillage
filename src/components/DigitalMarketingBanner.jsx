@@ -40,7 +40,7 @@ const DigitalMarketingBanner = () => {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    Fast, reliable, and secure hosting to fast track your business. <span className="highlight-red">Get In Touch With Us</span>
+                    Scalable, secure, and high-performance software solutions to accelerate your business growth. <a href="/contact" className="highlight-red">Get In Touch With Us</a>
                 </motion.h3>
 
                 <motion.div

@@ -1,0 +1,108 @@
+.academy-faq-section {
+    padding: 3rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.academy-faq-container {
+    max-width: 1000px;
+    /* Narrower width for reading */
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.academy-faq-header {
+    margin-bottom: 3rem;
+}
+
+.academy-faq-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.academy-faq-subtitle {
+    font-size: 1.1rem;
+    color: #4B5563;
+}
+
+.academy-faq-content-wrapper {
+    background-color: #FFF5F5;
+    /* Matches Development/Digital page FAQ background */
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.academy-faq-item {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.academy-faq-question-btn {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #111;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.academy-faq-question-btn:hover {
+    background-color: #f9f9f9;
+}
+
+.academy-faq-toggle-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #D92323;
+    /* Red color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.academy-faq-answer {
+    padding: 0 2rem;
+    color: #4B5563;
+    line-height: 1.6;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.academy-faq-answer-inner {
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .academy-faq-content-wrapper {
+        padding: 1.5rem;
+    }
+
+    .academy-faq-title {
+        font-size: 2rem;
+    }
+
+    .academy-faq-question-btn {
+        padding: 1rem;
+    }
+
+    .academy-faq-question-btn span {
+        font-size: 1rem;
+    }
+}

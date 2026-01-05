@@ -40,7 +40,7 @@ const HubHostingSection = () => {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    Fast, reliable, and secure hosting to fast track your business. <a href="#contact" className="highlight-red">Get In Touch With Us</a>
+                    Scalable, secure, and high-performance software solutions to accelerate your business growth. <a href="/contact" className="highlight-red">Get In Touch With Us</a>
                 </motion.p>
 
                 <motion.div

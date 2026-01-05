@@ -1,6 +1,7 @@
 import React from 'react';
 import './DigitalServices.css';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import studioIcon from '../assets/service-studio.gif';
 import seoIcon from '../assets/service-seo-1.gif';
 import semIcon from '../assets/service-sem-1.gif';
@@ -14,37 +15,43 @@ const DigitalServices = () => {
             title: "Studio",
             description: "A creative studio crafting impactful visuals, designs, and digital experiences that bring brands to life.",
             icon: studioIcon,
-            link: "#"
+            link: "/studio",
+            isInternal: true
         },
         {
             title: "Seo",
             description: "Optimizing your website to improve search rankings, increase visibility, and drive organic traffic.",
             icon: seoIcon,
-            link: "#"
+            link: "/seo",
+            isInternal: true
         },
         {
             title: "SEM",
             description: "Driving instant traffic and qualified leads through targeted, data-driven paid search campaigns.",
             icon: semIcon,
-            link: "#"
+            link: "/sem",
+            isInternal: true
         },
         {
             title: "SMO",
             description: "Enhancing brand visibility and engagement across platforms through strategic content and interactions.",
             icon: smoIcon,
-            link: "#"
+            link: "/smo",
+            isInternal: true
         },
         {
             title: "SMM",
             description: "Promoting brands through targeted social media campaigns to boost engagement, reach, and conversions.",
             icon: smmIcon,
-            link: "#"
+            link: "/smm",
+            isInternal: true
         },
         {
             title: "Design",
             description: "Creative and user-focused designs that blend aesthetics with functionality to deliver impactful digital experiences.",
             icon: designIcon,
-            link: "#"
+            link: "/design",
+            isInternal: true
         }
     ];
 
@@ -75,7 +82,11 @@ const DigitalServices = () => {
                         </div>
                         <h3>{service.title}</h3>
                         <p>{service.description}</p>
-                        <a href={service.link} className="service-link">View Details &gt;</a>
+                        {service.isInternal ? (
+                            <Link to={service.link} className="service-link">View Details &gt;</Link>
+                        ) : (
+                            <a href={service.link} className="service-link">View Details &gt;</a>
+                        )}
                     </motion.div>
                 ))}
             </div>

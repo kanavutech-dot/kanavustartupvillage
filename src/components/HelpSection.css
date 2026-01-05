@@ -99,4 +99,20 @@
     .help-title {
         font-size: 2rem;
     }
+
+    .help-value {
+        font-size: 0.85rem;
+        /* Drastically reduce for single line email */
+        white-space: nowrap;
+        /* Force single line */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* nice fallback */
+    }
+
+    .help-item {
+        width: 100%;
+        align-items: center;
+        /* Center align again since it is single line */
+    }
 }

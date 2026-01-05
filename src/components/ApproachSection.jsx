@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './ApproachSection.css';
 import { motion } from 'framer-motion';
 import { FaAngleDoubleRight } from 'react-icons/fa';
@@ -57,9 +57,9 @@ const ApproachSection = () => {
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>
                             </div>
-                            <button className="approach-btn">
+                            <Link to="/contact" className="approach-btn">
                                 start now <FaAngleDoubleRight />
-                            </button>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

@@ -9,10 +9,12 @@ import SearchOverlay from './SearchOverlay';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isAboutOpen, setIsAboutOpen] = useState(false);
+    const [isBlogsOpen, setIsBlogsOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const toggleAbout = () => setIsAboutOpen(!isAboutOpen);
+    const toggleBlogs = () => setIsBlogsOpen(!isBlogsOpen);
     const openSearch = () => setIsSearchOpen(true);
     const closeSearch = () => setIsSearchOpen(false);
 
@@ -53,7 +55,13 @@ const Header = () => {
                         <li><Link to="/hub">Hub</Link></li>
                         <li><Link to="/academy">Academy</Link></li>
                         <li><Link to="/contact" className="contact-link">» Contact</Link></li>
-                        <li><a href="/#blogs">Blogs</a></li>
+                        <li className="nav-item has-dropdown">
+                            <a href="/#blogs">Blogs</a>
+                            <ul className="dropdown-menu">
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Digital</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </motion.nav>
 
@@ -93,7 +101,26 @@ const Header = () => {
                         <li><Link to="/hub" onClick={toggleMenu}>Hub</Link></li>
                         <li><Link to="/academy" onClick={toggleMenu}>Academy</Link></li>
                         <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
-                        <li><a href="/#blogs" onClick={toggleMenu}>Blogs</a></li>
+                        <li className="mobile-nav-item">
+                            <div className="mobile-nav-link-wrapper" onClick={toggleBlogs}>
+                                <span className="mobile-link-text">Blogs</span>
+                                {isBlogsOpen ? <IoChevronUp /> : <IoChevronDown />}
+                            </div>
+                            <AnimatePresence>
+                                {isBlogsOpen && (
+                                    <motion.ul
+                                        className="mobile-submenu"
+                                        initial={{ height: 0, opacity: 0 }}
+                                        animate={{ height: 'auto', opacity: 1 }}
+                                        exit={{ height: 0, opacity: 0 }}
+                                        transition={{ duration: 0.3 }}
+                                    >
+                                        <li><a href="#" onClick={toggleMenu}>Technology</a></li>
+                                        <li><a href="#" onClick={toggleMenu}>Digital</a></li>
+                                    </motion.ul>
+                                )}
+                            </AnimatePresence>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './ObjectiveSection.css';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -28,9 +28,9 @@ const ObjectiveSection = () => {
                         Kanavu Startup Village (KSV), a part of Kanavu.org is a dynamic place for entrepreneurship and innovation, where the seeds of ideas and aspirations take root and flourish.
                     </p>
 
-                    <a href="#visit" className="visit-link">
+                    <Link to="/development" className="visit-link">
                         Visit Us <FaAngleDoubleRight />
-                    </a>
+                    </Link>
                 </motion.div>
             </div>
         </section>

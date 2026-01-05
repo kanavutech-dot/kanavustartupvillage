@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import './Hero.css';
 import { FaCheckCircle, FaAngleDoubleRight } from 'react-icons/fa';
@@ -62,9 +63,9 @@ const Hero = () => {
                 </motion.p>
 
                 <motion.div className="hero-footer" variants={itemVariants}>
-                    <button className="contact-btn">
+                    <Link to="/contact" className="contact-btn">
                         Contact <FaAngleDoubleRight size={14} style={{ marginLeft: '5px' }} />
-                    </button>
+                    </Link>
 
                     <div className="location-info">
                         <strong>Annamalaikottai</strong>
@@ -78,5 +79,7 @@ const Hero = () => {
         </section>
     );
 };
+
+
 
 export default Hero;

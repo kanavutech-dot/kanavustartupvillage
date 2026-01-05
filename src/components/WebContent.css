@@ -1,0 +1,73 @@
+.web-content-section {
+    padding: 4rem 0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.web-content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.web-content-block {
+    margin-bottom: 3rem;
+}
+
+.web-content-block h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.web-content-block p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+.web-feature-list,
+.web-benefit-list {
+    list-style: none;
+    padding: 0;
+}
+
+.web-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.web-icon-red {
+    color: #D92323;
+    /* Primary Red */
+    font-size: 1.2rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.web-benefit-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.web-bullet {
+    font-size: 0.4rem;
+    color: #333;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .web-content-block h2 {
+        font-size: 1.5rem;
+    }
+}

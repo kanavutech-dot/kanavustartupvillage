@@ -1,6 +1,7 @@
 import React from 'react';
 import './DevelopmentServices.css';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import serviceWeb from '../assets/service-web.gif';
 import serviceAi from '../assets/service-ai.gif';
 import serviceMobile from '../assets/service-mobile.gif';
@@ -43,6 +44,8 @@ const DevelopmentServices = () => {
         }
     ];
 
+
+
     return (
         <section className="dev-services-section">
             <div className="dev-services-container">
@@ -69,7 +72,11 @@ const DevelopmentServices = () => {
                             <img src={service.icon} alt={`${service.title} Icon`} className="dev-service-icon" />
                             <h3>{service.title}</h3>
                             <p>{service.description}</p>
-                            <a href="#" className="dev-service-link">View Details &gt;</a>
+                            {service.title === "Web" ? (
+                                <Link to="/web" className="dev-service-link">View Details &gt;</Link>
+                            ) : (
+                                <a href="#" className="dev-service-link">View Details &gt;</a>
+                            )}
                         </motion.div>
                     ))}
                 </div>

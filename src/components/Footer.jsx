@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaChevronDown, FaAngleUp, FaAngleDoubleRight } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaChevronDown, FaAngleUp, FaAngleDoubleRight, FaYoutube } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Footer = () => {
@@ -83,10 +83,10 @@ const Footer = () => {
                     <div className="footer-column">
                         <h3>Follow us</h3>
                         <div className="social-icons">
-                            <a href="#" className="social-icon-btn"><FaFacebookF /></a>
-                            <a href="#" className="social-icon-btn"><FaInstagram /></a>
-                            <a href="#" className="social-icon-btn"><FaLinkedinIn /></a>
-                            <a href="#" className="social-icon-btn"><FaWhatsapp /></a>
+                            <a href="https://www.facebook.com/KarthiEaswaramoorthy/" target="_blank" rel="noopener noreferrer" className="social-icon-btn"><FaFacebookF /></a>
+                            <a href="https://www.instagram.com/karthieaswaramoorthy?igsh=amc1N2hzcWRlOW9l" target="_blank" rel="noopener noreferrer" className="social-icon-btn"><FaInstagram /></a>
+                            <a href="https://youtube.com/@karthi.easwaramoorthy?si=PXZrUDgQPaQCCREu" target="_blank" rel="noopener noreferrer" className="social-icon-btn"><FaYoutube /></a>
+                            <a href="https://wa.me/918825889368" target="_blank" rel="noopener noreferrer" className="social-icon-btn"><FaWhatsapp /></a>
                         </div>
                     </div>
                 </div>

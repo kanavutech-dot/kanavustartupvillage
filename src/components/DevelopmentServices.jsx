@@ -74,6 +74,10 @@ const DevelopmentServices = () => {
                             <p>{service.description}</p>
                             {service.title === "Web" ? (
                                 <Link to="/web" className="dev-service-link">View Details &gt;</Link>
+                            ) : service.title === "AI" ? (
+                                <Link to="/ai" className="dev-service-link">View Details &gt;</Link>
+                            ) : service.title === "Mobile App" ? (
+                                <Link to="/flutter" className="dev-service-link">View Details &gt;</Link>
                             ) : (
                                 <a href="#" className="dev-service-link">View Details &gt;</a>
                             )}

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
   --primary-red: #D92323;
   --dark-bg: #020B14;
   --text-white: #FFFFFF;
   --text-grey: #9CA3AF;
-  --font-main: 'Inter', sans-serif;
+  --font-main: 'Sen', sans-serif;
   /* Typography Defaults */
   --h1-size: 3.5rem;
   --h2-size: 2.5rem;

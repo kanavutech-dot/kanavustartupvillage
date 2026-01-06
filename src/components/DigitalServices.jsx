@@ -19,7 +19,7 @@ const DigitalServices = () => {
             isInternal: true
         },
         {
-            title: "Seo",
+            title: "SEO",
             description: "Optimizing your website to improve search rankings, increase visibility, and drive organic traffic.",
             icon: seoIcon,
             link: "/seo",
@@ -34,7 +34,7 @@ const DigitalServices = () => {
         },
         {
             title: "SMO",
-            description: "Enhancing brand visibility and engagement across platforms through strategic content and interactions.",
+            description: "Improving brand reach and engagement through social media optimization and content interactions.",
             icon: smoIcon,
             link: "/smo",
             isInternal: true

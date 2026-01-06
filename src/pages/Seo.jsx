@@ -43,7 +43,7 @@ const Seo = () => {
                         transition={{ duration: 0.8 }}
                         style={{ fontSize: '2.8rem', fontWeight: '700', marginBottom: '1rem', lineHeight: '1.2' }}
                     >
-                        Seo
+                        SEO
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 30 }}

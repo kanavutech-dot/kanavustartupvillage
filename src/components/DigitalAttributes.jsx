@@ -38,7 +38,7 @@ const DigitalAttributes = () => {
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
                     >
-                        Dream,Start,Grow
+                        Dream, Start, Grow
                     </motion.span>
                     <motion.h2
                         className="digital-attr-title"

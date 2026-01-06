@@ -50,7 +50,7 @@ const Hero = () => {
                 animate="visible"
             >
                 <motion.div className="hero-subtitle" variants={itemVariants}>
-                    <FiCheckCircle className="check-icon" /> <span>Dream,Start,Grow</span>
+                    <FiCheckCircle className="check-icon" /> <span>Dream, Start, Grow</span>
                 </motion.div>
 
                 <motion.h1 className="hero-title" variants={itemVariants}>

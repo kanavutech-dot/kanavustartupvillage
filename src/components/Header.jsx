@@ -45,9 +45,9 @@ const Header = () => {
                         <li className="nav-item has-dropdown">
                             <a href="/#about">About</a>
                             <ul className="dropdown-menu">
-                                <li><a href="https://www.kanavu.org/about/" target="_blank" rel="noopener noreferrer">OUR STORY</a></li>
-                                <li><a href="https://www.kanavu.org/team/" target="_blank" rel="noopener noreferrer">TEAM</a></li>
-                                <li><a href="https://www.kanavu.org/founder/" target="_blank" rel="noopener noreferrer">FOUNDER</a></li>
+                                <li><a href="https://www.kanavu.org/about/" target="_blank" rel="noopener noreferrer">Our Story</a></li>
+                                <li><a href="https://www.kanavu.org/team/" target="_blank" rel="noopener noreferrer">Team</a></li>
+                                <li><a href="https://www.kanavu.org/founder/" target="_blank" rel="noopener noreferrer">Founder</a></li>
                             </ul>
                         </li>
                         <li><Link to="/development">Development</Link></li>
@@ -89,9 +89,9 @@ const Header = () => {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <li><a href="https://www.kanavu.org/about/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>OUR STORY</a></li>
-                                        <li><a href="https://www.kanavu.org/team/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>TEAM</a></li>
-                                        <li><a href="https://www.kanavu.org/founder/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>FOUNDER</a></li>
+                                        <li><a href="https://www.kanavu.org/about/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Our Story</a></li>
+                                        <li><a href="https://www.kanavu.org/team/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Team</a></li>
+                                        <li><a href="https://www.kanavu.org/founder/" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Founder</a></li>
                                     </motion.ul>
                                 )}
                             </AnimatePresence>

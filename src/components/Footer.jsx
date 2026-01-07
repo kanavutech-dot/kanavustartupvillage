@@ -24,9 +24,9 @@ const Footer = () => {
                 {/* CTA Banner */}
                 <div className="footer-cta">
                     <h2 className="footer-cta-text">Technology is best when it brings people together</h2>
-                    <Link to="/contact" className="footer-cta-btn">
+                    <a href="https://www.kanavu.org/contact-us/" className="footer-cta-btn">
                         get started <FaAngleDoubleRight size={14} />
-                    </Link>
+                    </a>
                 </div>
 
                 {/* Footer Columns */}
@@ -73,9 +73,9 @@ const Footer = () => {
                                 </AnimatePresence>
                             </li>
                             <li className="footer-link-item">
-                                <Link to="/contact" className="footer-link">
+                                <a href="https://www.kanavu.org/contact-us/" className="footer-link">
                                     Get In Touch
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>

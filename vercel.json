@@ -10,12 +10,3 @@
         }
     ]
 }
-
-{
-  "rewrites": [
-    {
-      "source": "/blogs/:path*",
-      "destination": "http://208.109.203.87/blogs/:path*"
-    }
-  ]
-}

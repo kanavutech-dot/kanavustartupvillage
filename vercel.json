@@ -2,8 +2,7 @@
   "rewrites": [
     {
       "source": "/blogs/:path*",
-      "destination": "http://208.109.203.87/kanavu.org/tech.kanavu.org/blogs/:path*"
+      "destination": "https://www.kanavu.org/tech.kanavu.org/blogs/:path*"
     }
   ]
 }
-

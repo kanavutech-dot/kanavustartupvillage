@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/blogs/wp-admin/:path*",
+      "destination": "https://www.kanavu.org/tech.kanavu.org/blogs/wp-admin/:path*"
+    },
+    {
+      "source": "/blogs/wp-login.php",
+      "destination": "https://www.kanavu.org/tech.kanavu.org/blogs/wp-login.php"
+    },
+    {
       "source": "/blogs/:path*",
       "destination": "https://www.kanavu.org/tech.kanavu.org/blogs/:path*"
     }

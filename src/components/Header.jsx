@@ -28,9 +28,9 @@ const Header = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <Link to="/">
+                    <a href="https://kanavu.org">
                         <img src={logo} alt="Kanavu Logo" className="logo-img" />
-                    </Link>
+                    </a>
                 </motion.div>
 
 
@@ -42,6 +42,7 @@ const Header = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <ul>
+                        <li><a href="https://tech.kanavu.org">Home</a></li>
                         <li className="nav-item has-dropdown">
                             <a href="/#about">About</a>
                             <ul className="dropdown-menu">
@@ -75,6 +76,7 @@ const Header = () => {
                 {/* Mobile Nav Overlay */}
                 <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
+                        <li><a href="https://tech.kanavu.org" onClick={toggleMenu}>Home</a></li>
                         <li className="mobile-nav-item">
                             <div className="mobile-nav-link-wrapper" onClick={toggleAbout}>
                                 <span className="mobile-link-text">About</span>

@@ -11,6 +11,10 @@
     {
       "source": "/blogs/:path*",
       "destination": "https://www.kanavu.org/tech.kanavu.org/blogs/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

@@ -42,7 +42,7 @@ const Header = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <ul>
-                        <li><a href="https://tech.kanavu.org">Home</a></li>
+                        <li><Link to="/">Home</Link></li>
 
                         <li><Link to="/development">Development</Link></li>
                         <li><Link to="/digital">Digital</Link></li>
@@ -69,7 +69,7 @@ const Header = () => {
                 {/* Mobile Nav Overlay */}
                 <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><a href="https://tech.kanavu.org" onClick={toggleMenu}>Home</a></li>
+                        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
 
                         <li><Link to="/development" onClick={toggleMenu}>Development</Link></li>
                         <li><Link to="/digital" onClick={toggleMenu}>Digital</Link></li>

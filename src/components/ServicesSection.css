@@ -26,6 +26,7 @@
     align-items: flex-start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
+    cursor: pointer;
 }
 
 .service-card-new:hover {

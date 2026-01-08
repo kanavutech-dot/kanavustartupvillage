@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './ObjectiveSection.css';
-import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const ObjectiveSection = () => {
@@ -29,7 +29,7 @@ const ObjectiveSection = () => {
                     </p>
 
                     <Link to="/development" className="visit-link">
-                        Visit Us <FaAngleDoubleRight />
+                        LEARN MORE <FaArrowRight />
                     </Link>
                 </motion.div>
             </div>

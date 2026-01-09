@@ -9,7 +9,7 @@ import ApproachSection from '../components/ApproachSection';
 import DreamsSection from '../components/DreamsSection';
 import FAQSection from '../components/FAQSection';
 import TechStackSection from '../components/TechStackSection';
-import HelpSection from '../components/HelpSection';
+
 
 const Home = () => {
     return (
@@ -24,7 +24,7 @@ const Home = () => {
             <DreamsSection />
             <FAQSection />
             <TechStackSection />
-            <HelpSection />
+
         </main>
     );
 };

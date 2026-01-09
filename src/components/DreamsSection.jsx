@@ -40,7 +40,7 @@ const DreamsSection = () => {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    Kanavu Startup Village: Where Dreams Take Flight
+                    Kanavu Startup Village: Where Dreams Comes True
                 </motion.h2>
 
                 <motion.div

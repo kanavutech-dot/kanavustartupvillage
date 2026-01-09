@@ -52,8 +52,8 @@ const Header = () => {
                         <li className="nav-item has-dropdown">
                             <a href="/#blogs">Blogs</a>
                             <ul className="dropdown-menu">
-                                <li><a href="#">Technology</a></li>
-                                <li><a href="#">Digital</a></li>
+                                <li><a href="https://tech.kanavu.org/blogs/technology/">Technology</a></li>
+                                <li><a href="https://tech.kanavu.org/blogs/digital/">Digital</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -90,8 +90,8 @@ const Header = () => {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <li><a href="#" onClick={toggleMenu}>Technology</a></li>
-                                        <li><a href="#" onClick={toggleMenu}>Digital</a></li>
+                                        <li><a href="https://tech.kanavu.org/blogs/technology/" onClick={toggleMenu}>Technology</a></li>
+                                        <li><a href="https://tech.kanavu.org/blogs/digital/" onClick={toggleMenu}>Digital</a></li>
                                     </motion.ul>
                                 )}
                             </AnimatePresence>
